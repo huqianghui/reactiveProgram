@@ -3,7 +3,6 @@ package com.example.reactordemo;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 import org.springframework.util.Assert;
@@ -14,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.reactive.config.EnableWebFlux;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import java.time.Instant;
 
 @SpringBootApplication
 @Log4j2
@@ -32,10 +29,10 @@ public class ReactorDemoApplication {
 @Log4j2
 class GreetingController {
 
-    private final  UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Autowired
-    public GreetingController(UserRepository userRepository){
+    public GreetingController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
