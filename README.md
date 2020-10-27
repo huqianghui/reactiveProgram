@@ -1,6 +1,6 @@
 # Reactive Program
 
-之前接错过akka，然后也使用过spark，同时因为在spring5中使用大量的reactive 编程，在hystrix等模块中的实现。
+之前接触过akka，然后也使用过spark，同时因为在spring5中使用大量的reactive 编程，在hystrix等模块中的实现。
 
 导致很多代码看起来不好理解和debug。
 
